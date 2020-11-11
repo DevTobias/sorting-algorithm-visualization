@@ -2,7 +2,7 @@
 
 `Sorting Algorithm Visualization` is a tool to visualize the most famous sorting algorithms for beginners of this topic, so they can visually recognize the patterns.
 
-![CI/CD](https://github.com/devtobias/sorting-algorithm-visualization/workflows/CI/CD/badge.svg)
+[![CI/CD](https://github.com/devtobias/sorting-algorithm-visualization/workflows/CI/CD/badge.svg)](https://codecov.io/gh/devtobias/sorting-algorithm-visualization)
 [![Codecov](https://img.shields.io/codecov/c/github/devtobias/sorting-algorithm-visualization)](https://codecov.io/gh/devtobias/sorting-algorithm-visualization)
 [![GitHub license](https://img.shields.io/github/license/devtobias/sorting-algorithm-visualization)](https://github.com/DevTobias/sorting-algorithm-visualization/blob/main/LICENSE)
 
@@ -13,7 +13,7 @@
 * [Features](#features)
 * [Requirements](#requirements)
 * [Getting started](#getting-started)
-* [License](#License)
+* [License](#license)
 
 ## Features
 
@@ -21,7 +21,6 @@
 
 - [ ] [Node](https://nodejs.org/en/)
 - [ ] [NPM](https://www.npmjs.com/)
-- [ ] [Yarn](https://yarnpkg.com/)
 
 
 ## Getting started
@@ -44,8 +43,8 @@ npm install
 Now everything should be installed and is ready to start.
 
 ### Starting the application
-Run local react server:
 ```bash
+# Run the local react server
 npm start
 ```
 
