@@ -2,7 +2,7 @@
 
 `Sorting Algorithm Visualization` is a tool to visualize the most famous sorting algorithms for beginners of this topic, so they can visually recognize the patterns.
 
-[![Discord](https://img.shields.io/discord/308323056592486420?logo=discord)](https://discord.gg/E72mnpj) [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/DevTobias/code-force-discord-bot/blob/main/LICENSE)
+[![Discord](https://img.shields.io/discord/670656886382788608?logo=discord)](https://discord.gg/E72mnpj) [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/DevTobias/code-force-discord-bot/blob/main/LICENSE)
 
 ## Table of content
 
