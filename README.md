@@ -2,14 +2,18 @@
 
 `Sorting Algorithm Visualization` is a tool to visualize the most famous sorting algorithms for beginners of this topic, so they can visually recognize the patterns.
 
-[![Discord](https://img.shields.io/discord/670656886382788608?logo=discord)](https://discord.gg/E72mnpj) [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/DevTobias/code-force-discord-bot/blob/main/LICENSE)
+[![CI/CD](https://github.com/devtobias/sorting-algorithm-visualization/workflows/CI/CD/badge.svg)](https://codecov.io/gh/devtobias/sorting-algorithm-visualization)
+[![Codecov](https://img.shields.io/codecov/c/github/devtobias/sorting-algorithm-visualization)](https://codecov.io/gh/devtobias/sorting-algorithm-visualization)
+[![GitHub license](https://img.shields.io/github/license/devtobias/sorting-algorithm-visualization)](https://github.com/DevTobias/sorting-algorithm-visualization/blob/main/LICENSE)
+
+[![Discord](https://img.shields.io/discord/670656886382788608?logo=discord)](https://discord.gg/E72mnpj) 
 
 ## Table of content
 
 * [Features](#features)
 * [Requirements](#requirements)
 * [Getting started](#getting-started)
-* [License](#License)
+* [License](#license)
 
 ## Features
 
@@ -17,7 +21,6 @@
 
 - [ ] [Node](https://nodejs.org/en/)
 - [ ] [NPM](https://www.npmjs.com/)
-- [ ] [Yarn](https://yarnpkg.com/)
 
 
 ## Getting started
@@ -40,8 +43,8 @@ npm install
 Now everything should be installed and is ready to start.
 
 ### Starting the application
-Run local react server:
 ```bash
+# Run the local react server
 npm start
 ```
 
