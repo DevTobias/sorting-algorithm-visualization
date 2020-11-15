@@ -2,15 +2,15 @@
 
 import React, {Component} from 'react';
 
-import MainNavbar from './navbar.component';
-import SideNav from './sidenav.component';
+import Settings from '../settings/Settings.component';
+
+import './Visualizer.css';
 
 export default class SortingVisualizer extends Component {
   render() {
     return (
       <main className="App">
-        <MainNavbar />
-        <SideNav />
+        <Settings />
         <header className="App-header">
           <p>Sorting Algorithm Visualization</p>
         </header>
