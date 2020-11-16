@@ -4,12 +4,12 @@ import React, {Component} from 'react';
 
 import {Navbar, Nav, Icon} from 'rsuite';
 import ResponsiveNav from '@rsuite/responsive-nav';
+import {Link} from 'react-router-dom';
 
 import {useDispatch} from 'react-redux';
 import {toggle} from '../settings/settingsSlice';
 
 import './Navbar.css';
-
 
 const NavBarInstance = ({onSelect, activeKey, ...props}) => {
   const dispatch = useDispatch();
@@ -19,38 +19,48 @@ const NavBarInstance = ({onSelect, activeKey, ...props}) => {
     display: 'inline-block',
   };
   const navStyle = {
-    'box-shadow': '0px 3px 5px 0px rgba(15,19,26,0.5)',
-    'background-color': '#0F131A',
+    'boxShadow': '0px 3px 5px 0px rgba(15,19,26,0.5)',
+    'backgroundColor': '#0F131A',
   };
 
   return (
     <Navbar {...props} style={navStyle}>
       <Navbar.Header style={headerStyle} className="navbar-brand logo">
-        <a href="">
+        <Link to='/home'>
           <img
             src={process.env.PUBLIC_URL + '/logo.svg'}
             width="30" height="30"
             className="d-inline-block align-top"
           />{' '}
-        </a>
+        </Link>
       </Navbar.Header>
       <Navbar.Body>
+
         <ResponsiveNav appearance="subtle" onSelect={onSelect}
           activeKey={activeKey}>
-          <ResponsiveNav.Item eventKey="1" icon={<Icon icon="home" />}>
-            Home
+          <ResponsiveNav.Item componentClass={Link} to="/home"
+            eventKey="1" icon={<Icon icon="home" />}>
+              Home
           </ResponsiveNav.Item>
-          <ResponsiveNav.Item icon={<Icon icon="sort" />} eventKey="2">
-            Sortierung
+
+          <ResponsiveNav.Item componentClass={Link} to="/sorting-visualizer"
+            eventKey="2" icon={<Icon icon="sort" />} >
+              Sortierung
           </ResponsiveNav.Item>
-          <ResponsiveNav.Item icon={<Icon icon="search" />} eventKey="3">
-            Wegfindung
+
+          <ResponsiveNav.Item componentClass={Link} to="/pathfinding-visualizer"
+            eventKey="3" icon={<Icon icon="search" />} >
+              Wegfindung
           </ResponsiveNav.Item>
-          <ResponsiveNav.Item icon={<Icon icon="table" />} eventKey="4">
-            Markov
+
+          <ResponsiveNav.Item componentClass={Link} to="/markov-algorithm"
+            eventKey="4" icon={<Icon icon="table" />} >
+              Markov
           </ResponsiveNav.Item>
-          <ResponsiveNav.Item icon={<Icon icon="microchip" />} eventKey="5">
-            Registermaschine
+
+          <ResponsiveNav.Item componentClass={Link} to="/register-maschine"
+            eventKey="5" icon={<Icon icon="microchip" />} >
+              Registermaschine
           </ResponsiveNav.Item>
         </ResponsiveNav>
         <Nav pullRight onSelect={() => dispatch(toggle())}>
@@ -65,6 +75,11 @@ export default class MainNavbar extends Component {
   constructor() {
     super();
     this.handleSelect = this.handleSelect.bind(this);
+
+    /* let key = '1';
+    if (window.location.pathname == '/sorting-visualizer') {
+      key = '2';
+    }*/
     this.state = {
       activeKey: '1',
     };

@@ -1,0 +1,15 @@
+.card-style {
+    width: 18rem;
+    background-color: #0F131A;
+    /*color: #A4A9B3;*/
+    color: white;
+    margin: 1em auto;
+}
+
+.card-title {
+    text-align: center;
+}
+
+a {
+    color: #34C3ff;
+}

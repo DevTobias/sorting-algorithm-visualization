@@ -4,17 +4,17 @@ import React, {Component} from 'react';
 
 import Settings from '../settings/Settings.component';
 
-import './Visualizer.css';
+import './Registermaschine.css';
 
-export default class SortingVisualizer extends Component {
+export default class Registermaschine extends Component {
   render() {
     return (
-      <main className="App">
+      <div className="App">
         <Settings />
         <header className="App-header">
-          <p>Sorting Algorithm Visualization</p>
+          <p>Registermaschine</p>
         </header>
-      </main>
+      </div>
     );
   }
 }
